@@ -1,0 +1,69 @@
+>(2017-2014)/(2014-1980)*100
+a=2014
+           >b=2017
+           >c= 1980
+           >(b-a)/(a-c)*100
+
+> x2 <- c(4,5,8,11)
+           >sum(x2)
+
+> x = rnorm(100)
+           >plot(x)
+help(sqrt)
+
+First go to File, New File, R Script. It will open a file console. Enter x=rnorm(100),plot(x) then save file as firstscript.R. The file can be run in editor window or by pressing CTRL + Shift + S
+p <- seq(from=31, to=60, by=1)
+           Q=matrix(data=c(31:60),ncol=5,nrow=6)
+
+: x1=seq(from=1, to=100, by=1)
+                 x2=seq(from=1, to=100, by=1)
+  x3=seq(from=1, to=100, by=1)
+  t=data.frame(a=x1,b=x1+x2,c=x1+x2+x3)
+                 plot(t)
+
+x1=seq(from=1, to=100, by=1)
+x2=seq(from=1, to=100, by=1)
+x3=seq(from=1, to=100, by=1)
+t=data.frame(a=x1,b=x1+x2,c=x1+x2+x3)
+plot(t)
+plot(t$a, type="l", ylim=range(t),lwd=3, col=rgb(1,0,0,0.3))
+lines(t$b, type="s", lwd=2,col=rgb(0.3,0.4,0.3,0.9))
+points(t$c, pch=20, cex=4,col=rgb(0,0,1,0.3))
+
+
+: d = data.frame(g = c(3,4,5),h = c(12,43,54))
+write.table(d, file="tst1.txt", row.names=FALSE)
+d2 = read.table(file="tst1.txt",header=TRUE)
+d2$g*5
+
+: date1=strptime( c("20140518080000","20170518000000"),format="%Y%m%d%H%M%S")
+> date1=x
+> plot(x)
+
+vector=seq(from=1, to=100, by=1)
+s=c()
+for(i in 1:100)
+{
+  if(vector[i]<5)
+  {
+    s[i]=vector[i]*5;
+  }
+  else if(vector[i]>90)
+  {
+    s[i]=vector[i]*10;
+  }
+  else
+  {
+    s[i]=vector[i]*0.1;
+  }
+}
+S
+
+fun= function(arg1,arg2 )
+{
+  vector[i]=arg1[i];
+  for(i in length(vector))
+  {
+    
+  }
+}
